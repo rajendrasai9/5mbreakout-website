@@ -61,4 +61,5 @@ wcwidth==0.2.5
 websockets==10.3
 Werkzeug==2.1.2
 wrapt==1.14.1
+mod-wsgi==4.9.2
 yarl==1.7.2
