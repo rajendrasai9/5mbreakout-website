@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5 Min breakout</title>
+  </head>
+  <body>
+    <h1>Signals</h1>
+  </body>
+</html>
+
+
+<table class="table" style="width: 1500px">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Symbol</th>
+      <th scope="col">Avg_volume</th>
+      <th scope="col">Latest_volume</th>
+      <th scope="col">Datetime</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for sym in allsym|reverse %}
+    <tr>
+      <th scope="row">{{sym.sno}}</th>
+      <td>{{sym.symbol}}</td>
+      <td>{{sym.avg_vol}}</td>
+      <td>{{sym.latest_vol}}</td>
+      <td>{{sym.date_time}}</td>
+    </tr>
+    {% endfor %}
+<!--     
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr> -->
+  </tbody>
+</table>
