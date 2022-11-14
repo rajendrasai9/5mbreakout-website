@@ -40,8 +40,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 # celery = make_celery(app)
 
-api_key = "IMQaYnycqb2zEnVWoLxP7M0l5drTf4Y2UPcJybkHtIVBY71jWuqGiinZGxxkLWpj"
-api_secret = "S7cT4lJsC2QoJFcbjapwvrusEcbqNmL6LSn1tJzwJPUvnyVZvpiWrIJkJnLokuz5"
+api_key = "your-api-key"
+api_secret = "your-api-secret"
 
 tickers_spot = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'NEOUSDT', 'LTCUSDT', 'QTUMUSDT', 'ADAUSDT', 'XRPUSDT', 'EOSUSDT', 'TUSDUSDT',
                 'IOTAUSDT', 'XLMUSDT', 'ONTUSDT', 'TRXUSDT', 'ETCUSDT', 'ICXUSDT', 'NULSUSDT', 'VETUSDT', 'LINKUSDT', 'WAVESUSDT',
